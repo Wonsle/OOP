@@ -46,6 +46,8 @@
     <Compile Include="Build\Build.cs" />
     <Compile Include="Build\Director.cs" />
     <Compile Include="Build\IArmorBuilder.cs" />
+    <Compile Include="Decorator\Army.cs" />
+    <Compile Include="Decorator\IArmy.cs" />
     <Compile Include="Factory\Factory.cs" />
     <Compile Include="Factory\IDefenStrategy.cs" />
     <Compile Include="Help.cs" />

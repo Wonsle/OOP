@@ -11,15 +11,9 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            var green = new GreenArmorBuilder();
-            var direct = new Director();
-            for (int i = 0; i < 3; i++)
-            {
-                direct.Construct(green);
-                green.GetArmor();
-                WriteLine();
-            }
-            
+            new GeneralA().ConveneOperation();
+
+
 
             ReadLine();
         }
