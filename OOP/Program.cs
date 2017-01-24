@@ -11,14 +11,15 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            var Acar = new CompanyA_Car();
-            Acar.MakeToyCar();
-            var Acat = new CompanyA_Cat();
-            Acat.MakeToyCat();
-            var Bcar = new CompanyB_Car();
-            Bcar.MakeToyCar();
-            var Bcat = new CompanyB_Cat();
-            Bcat.MakeToyCat();
+            var green = new GreenArmorBuilder();
+            var direct = new Director();
+            for (int i = 0; i < 3; i++)
+            {
+                direct.Construct(green);
+                green.GetArmor();
+                WriteLine();
+            }
+            
 
             ReadLine();
         }
